@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gurram Mani Karthik - DevOps Engineer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Fira+Code&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">&lt;GMK/&gt;</span>
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#certifications" class="nav-link">Certifications</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <button class="theme-toggle" id="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="hero-greeting">👋 Hi, I'm</p>
+                <h1 class="hero-name">Gurram Mani Karthik</h1>
+                <h2 class="hero-title">DevOps Engineer | Cloud Architect | Automation Specialist</h2>
+                <p class="hero-description">Building scalable infrastructure and implementing DevSecOps workflows</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="https://github.com/Gurram2001" class="btn btn-secondary" target="_blank">GitHub Profile</a>
+                    <a href="#contact" class="btn btn-outline">Contact Me</a>
+                </div>
+                <div class="hero-social">
+                    <a href="https://github.com/Gurram2001" class="social-link" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/gurram-mani-karthik-38bb771a3/" class="social-link" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:manikarthikg@gmail.com" class="social-link"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="terminal">
+                    <div class="terminal-header">
+                        <span class="terminal-button red"></span>
+                        <span class="terminal-button yellow"></span>
+                        <span class="terminal-button green"></span>
+                    </div>
+                    <div class="terminal-body">
+                        <pre><code>$ kubectl get deployments
+NAME                    READY   UP-TO-DATE   AVAILABLE   AGE
+frontend-deployment     3/3     3            3           2d
+backend-deployment      3/3     3            3           2d
+microservice-java       2/2     2            2           5d
+
+$ terraform apply
+<span class="terminal-success">Apply complete! Resources: 15 added, 0 changed, 0 destroyed.</span>
+
+$ docker ps
+CONTAINER ID   IMAGE                    STATUS
+a1b2c3d4e5f6   flask-app:latest        Up 2 hours
+g7h8i9j0k1l2   prometheus:latest       Up 5 hours</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Experienced DevOps Engineer with expertise in cloud infrastructure, containerization, and automation. I specialize in:</p>
+                    <ul class="about-list">
+                        <li><i class="fas fa-check"></i> Implementing & maintaining CI/CD pipelines using Azure DevOps</li>
+                        <li><i class="fas fa-check"></i> Containerizing applications with Docker and orchestrating with Kubernetes</li>
+                        <li><i class="fas fa-check"></i> Infrastructure as Code with Terraform and Ansible</li>
+                        <li><i class="fas fa-check"></i> Cloud services expertise in Azure, AWS, and GCP</li>
+                        <li><i class="fas fa-check"></i> Monitoring infrastructure using Prometheus, Grafana, and Azure Monitor</li>
+                        <li><i class="fas fa-check"></i> Implementing automation that reduced manual effort by 38hrs/month</li>
+                    </ul>
+                </div>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <i class="fas fa-rocket"></i>
+                        <h3>112+</h3>
+                        <p>Integrations Migrated</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-clock"></i>
+                        <h3>38hrs</h3>
+                        <p>Monthly Time Saved</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-percentage"></i>
+                        <h3>90%</h3>
+                        <p>SLA Achievement</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-dollar-sign"></i>
+                        <h3>45%</h3>
+                        <p>Cost Reduction</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Stack</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="skill-header">
+                        <i class="fas fa-cloud"></i>
+                        <h3>Cloud Platforms</h3>
+                    </div>
+                    <div class="skill-items">
+                        <span class="skill-tag">Azure</span>
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">GCP (learning)</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-header">
+                        <i class="fab fa-docker"></i>
+                        <h3>Containers & Orchestration</h3>
+                    </div>
+                    <div class="skill-items">
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Kubernetes</span>
+                        <span class="skill-tag">Helm</span>
+                        <span class="skill-tag">AKS</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-header">
+                        <i class="fas fa-code-branch"></i>
+                        <h3>CI/CD & DevOps</h3>
+                    </div>
+                    <div class="skill-items">
+                        <span class="skill-tag">Azure DevOps</span>
+                        <span class="skill-tag">Jenkins</span>
+                        <span class="skill-tag">Argo CD</span>
+                        <span class="skill-tag">GitOps</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-header">
+                        <i class="fas fa-file-code"></i>
+                        <h3>Infrastructure as Code</h3>
+                    </div>
+                    <div class="skill-items">
+                        <span class="skill-tag">Terraform</span>
+                        <span class="skill-tag">Ansible</span>
+                        <span class="skill-tag">Azure CLI</span>
+                        <span class="skill-tag">AWS CLI</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-header">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>Monitoring & Observability</h3>
+                    </div>
+                    <div class="skill-items">
+                        <span class="skill-tag">Prometheus</span>
+                        <span class="skill-tag">Grafana</span>
+                        <span class="skill-tag">Azure Monitor</span>
+                        <span class="skill-tag">Event Viewer</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-header">
+                        <i class="fas fa-code"></i>
+                        <h3>Programming & Scripting</h3>
+                    </div>
+                    <div class="skill-items">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">.NET/C#</span>
+                        <span class="skill-tag">Shell Scripting</span>
+                        <span class="skill-tag">Bash</span>
+                        <span class="skill-tag">SQL</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3>DevOps Monitoring Stack</h3>
+                    <p>Complete DevOps lifecycle with Dockerized Flask app deployed to Azure VM with Prometheus & Grafana monitoring</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Docker</span>
+                        <span class="tech-tag">Azure VM</span>
+                        <span class="tech-tag">Prometheus</span>
+                        <span class="tech-tag">Grafana</span>
+                        <span class="tech-tag">GitHub Actions</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Gurram2001/devops-monitoring-stack.git" class="project-link" target="_blank">GitHub</a>
+                        <a href="#" class="project-link">Documentation</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h3>DevSecOps Pipeline - AKS</h3>
+                    <p>End-to-End CI/CD with Azure AKS, ACR, Argo CD, reducing pipeline time by 43.36% using GitOps approach</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Azure AKS</span>
+                        <span class="tech-tag">Argo CD</span>
+                        <span class="tech-tag">Azure DevOps</span>
+                        <span class="tech-tag">Docker</span>
+                        <span class="tech-tag">Helm</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Gurram2001/RandomNameSelector.git" class="project-link" target="_blank">GitHub</a>
+                        <a href="#" class="project-link">Details</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fab fa-docker"></i>
+                    </div>
+                    <h3>Docker Practice Apps</h3>
+                    <p>Multi-language repository with 14+ programming languages, each containing Dockerized sample applications</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Docker</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">.NET</span>
+                        <span class="tech-tag">Go</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Gurram2001/docker-practice-apps.git" class="project-link" target="_blank">GitHub</a>
+                        <a href="#" class="project-link">Examples</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>DevOps Tools Automation</h3>
+                    <p>Ansible role to automate installation of Docker, Kubernetes, Helm, Terraform, and essential DevOps tools</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Ansible</span>
+                        <span class="tech-tag">Docker</span>
+                        <span class="tech-tag">Kubernetes</span>
+                        <span class="tech-tag">Terraform</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Gurram2001/devops_tools.git" class="project-link" target="_blank">GitHub</a>
+                        <a href="#" class="project-link">Usage Guide</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>AKS Troubleshooting Guide</h3>
+                    <p>Comprehensive guide for deploying Node.js on AKS and troubleshooting common container issues</p>
+                                        <div class="project-tech">
+                        <span class="tech-tag">Azure AKS</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">Kubernetes</span>
+                        <span class="tech-tag">Docker</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Gurram2001/azure-aks-nodejs-trobleshoot.git" class="project-link" target="_blank">GitHub</a>
+                        <a href="#" class="project-link">Tutorial</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-folder-open"></i>
+                    </div>
+                    <h3>File Migration Automation</h3>
+                    <p>C# console application for automated file migration with retry mechanism and detailed logging</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">C#</span>
+                        <span class="tech-tag">.NET</span>
+                        <span class="tech-tag">ADO.NET</span>
+                        <span class="tech-tag">Automation</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Gurram2001/Move_Files_from_Subdirectroy.git" class="project-link" target="_blank">GitHub</a>
+                        <a href="#" class="project-link">Documentation</a>
+                    </div>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 2rem;">
+                <a href="https://github.com/Gurram2001" class="btn btn-primary" target="_blank">View All Projects on GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Professional Journey</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">July 2025 - Present</div>
+                    <div class="timeline-content">
+                        <h3>AI Cloud Engineer</h3>
+                        <h4>ARCAP REIT AI SOLUTIONS</h4>
+                        <ul>
+                            <li>Working with Python, Azure, AWS, Compute, Storage, Network resources</li>
+                            <li>Attended technical training on cloud foundations and applied in lab environments</li>
+                            <li>Collaborated with DevOps team to resolve deployment difficulties across sandbox environments</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">June 2024 - July 2025</div>
+                    <div class="timeline-content">
+                        <h3>Infrastructure Product Engineer - Contributor</h3>
+                        <h4>Yanserv (Yanamala Services Pvt Limited)</h4>
+                        <ul>
+                            <li>Contributed to startup from ideation to full product launch</li>
+                            <li>Played critical role in shaping product roadmap and aligning user needs</li>
+                            <li>Designed scalable cloud architecture using AWS services (EC2, S3, EKS, Lambda)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">Nov 2022 - Feb 2024</div>
+                    <div class="timeline-content">
+                        <h3>Application Development Associate</h3>
+                        <h4>Accenture, Hyderabad</h4>
+                        <ul>
+                            <li>Migrated 112 integrations from BizTalk Server 2016 to 2020 using Azure DevOps</li>
+                            <li>Developed automation for Azure Blob Service Key Expiry using C# and ADO.Net</li>
+                            <li>Reduced manual monitoring effort by 38 hours/month through automation</li>
+                            <li>Resolved 90% of P1, P2 priorities within SLA during on-call activities</li>
+                            <li>Worked with Docker containerization and Azure DevOps Classic Pipelines</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">Feb 2022 - July 2022</div>
+                    <div class="timeline-content">
+                        <h3>Gen C Trainee, Intern</h3>
+                        <h4>Cognizant, Hyderabad</h4>
+                        <ul>
+                            <li>Trained in SQL, NoSQL, SDLC models, and Agile delivery methodologies</li>
+                            <li>Participated in business communication and DevOps best practices</li>
+                            <li>Learned SDLC lifecycles, Agile, and Scrum methodologies</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">Jan 2025 - Present</div>
+                    <div class="timeline-content">
+                        <h3>AI Prompt Engineer (Part-time)</h3>
+                        <h4>Outlier</h4>
+                        <ul>
+                            <li>Train and rank AI responses for Generative AI models</li>
+                            <li>Contributing to AI model improvement through code refactoring and ranking</li>
+                            <li>Part-time work to support and learn Gen AI technologies</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications">
+        <div class="container">
+            <h2 class="section-title">Certifications & Achievements</h2>
+            <div class="cert-grid">
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fab fa-microsoft"></i>
+                    </div>
+                    <h3>Microsoft Certified: Azure Fundamentals</h3>
+                    <p>AZ-900 | Jan 2023</p>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fab fa-microsoft"></i>
+                    </div>
+                    <h3>Microsoft Certified: Power Platform Fundamentals</h3>
+                    <p>PL-900 | Jan 2023</p>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fab fa-aws"></i>
+                    </div>
+                    <h3>AWS Educate Badges</h3>
+                    <p>Cloud Computing 101 & CloudOps</p>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3>FCSAN-101</h3>
+                    <p>Introduction to Fibre Channel SANs</p>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>AI for Everyone</h3>
+                    <p>IBM | Mar 2024</p>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>Cloud Job Simulations</h3>
+                    <p>Datacom, Verizon, AWS</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="education-grid">
+                <div class="education-card">
+                    <div class="education-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Bachelor of Technology (ECE)</h3>
+                    <h4>SRKR Engineering College</h4>
+                    <p>CGPA: 7.88 | 2022</p>
+                </div>
+                <div class="education-card">
+                    <div class="education-icon">
+                        <i class="fas fa-school"></i>
+                    </div>
+                    <h3>Intermediate (12th)</h3>
+                    <h4>Narayana Junior College</h4>
+                    <p>Percentage: 97% | 2018</p>
+                </div>
+                <div class="education-card">
+                    <div class="education-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3>SSC (10th)</h3>
+                    <h4>Narayana EM School</h4>
+                    <p>GPA: 9.5 | 2016</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Let's Connect</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <p>I'm excited about cloud infrastructure, automation, and creating production-ready DevOps workflows. Looking for opportunities that will allow me to grow professionally and be resourceful.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:manikarthikgurram2001@gmail.com">manikarthikgurram2001@gmail.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+91 XXXXXXXXXX</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Hyderabad, India</span>
+                        </div>
+                    </div>
+                    <div class="contact-social">
+                        <a href="https://github.com/Gurram2001" class="social-link" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/gurram-mani-karthik-38bb771a3/" class="social-link" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="mailto:manikarthikgurram2001@gmail.com" class="social-link"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form" name="contact" method="POST" data-netlify="true">
+                    <input type="hidden" name="form-name" value="contact">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2023 Gurram Mani Karthik. Built with passion for DevOps.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
